@@ -94,7 +94,7 @@ else
     REPO="https://$GITHUB_ACTOR:$TOKEN@github.com/$GITHUB_REPOSITORY.git"
     if [ "${REPO_SYSTEM}" = "MAVEN" ]; then
         mvn -q versions:set -DnewVersion="${NEW_VERSION}"
-        find . -name 'pom.xml' -exec git add '{}'
+        find . -name 'pom.xml' -exec git add '{}' +
     elif [ "${REPO_SYSTEM}" = "GRADLE" ]; then
         sed -i "s/\(version *= *['\"]*\)${OLD_VERSION}\(['\"]*\)/\1${NEW_VERSION}\2/" ${BUILD_FILE}
         git add $BUILD_FILE
