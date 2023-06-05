@@ -39,7 +39,7 @@ inputs:
   auto-version-bump-suffix:
     description: 'Version suffix for auto bump'
     required: true
-    default: 'SNAPSHOT'
+    default: 'dev'
   auto-version-bump-higher:
     description: 'Should after the suffix a number bumped?'
     required: true
