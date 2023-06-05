@@ -2,7 +2,7 @@
 name: Gradle & Maven Version Bump
 description: A simple GitHub Actions to bump the version of Gradle & Maven projects with extended functionality for automatic versioning.
 
-author: Plugily Projects, fzacek, Nick Nichols
+author: WRORacer , Plugily Projects, fzacek, Nick Nichols
 
 branding:
   color: purple
