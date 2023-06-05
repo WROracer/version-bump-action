@@ -98,7 +98,7 @@ else
     elif [ "${REPO_SYSTEM}" = "GRADLE" ]; then
         sed -i "s/\(version *= *['\"]*\)${OLD_VERSION}\(['\"]*\)/\1${NEW_VERSION}\2/" ${BUILD_FILE}
         git add $BUILD_FILE
-    ficmd
+    fi
     git commit -m "Bump version from $OLD_VERSION to $NEW_VERSION"
     if [[ "${BUMP_MODE}" == "auto" ]] && [[ "${AUTO_RELEASE}" == "false" ]]; then
         echo "Doing no new tag for this bump because its disabled for auto mode"
